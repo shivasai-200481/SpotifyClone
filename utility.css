@@ -1,0 +1,178 @@
+/* 
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #222;
+  }
+   */
+
+
+.invert {
+    filter: invert(1);
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    /* Background of the scrollbar track */
+    border-radius: 6px;
+    /* Roundness of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #444;
+    /* Color of the scrollbar thumb */
+    border-radius: 6px;
+    /* Roundness of the scrollbar thumb */
+}
+
+/* ading media qqueries to our website */
+@media screen and (max-width: 1500px) {
+    .left {
+        position: absolute;
+        left: -100%;
+        z-index: 3;
+
+
+    }
+
+
+    .right {
+        width: 100vw;
+        margin: 3px 8px;
+        height: 100vh;
+    }
+
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        /* overflow: scroll; */
+        justify-content: center;
+        height: 100vh;
+        overflow-y: scroll;
+        gap: 6px;
+        margin: 0px 10px;
+    }
+
+    .seekBar {
+
+        font-family: "Poppins", sans-serif;
+        font-size: 10px;
+        width: 95vw;
+        margin: auto 5px;
+        height: 130px;
+        background-color: #363a3a;
+        position: fixed;
+        bottom: 5px;
+        right: 10px;
+        gap: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        flex-direction: column;
+    }
+
+    .infoBar {
+        display: flex;
+        justify-content: space-between;
+        width: 85vw;
+    }
+
+    .ham {
+        display: block;
+    }
+
+    .songItem ul li {
+        font-family: "Poppins", sans-serif;
+        list-style-type: none;
+        width: 250px;
+        padding: 10px 10px;
+        font-size: 9px;
+        border: 2px solid #d0d0d0;
+        margin: 15px 1px;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        /* justify-items: center; */
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (max-width: 250px) {
+    .seekBar {
+
+        font-family: "Poppins", sans-serif;
+        font-size: 7px;
+        width: 65vw;
+        margin: auto -10px;
+        padding: 0 32px;
+        height: 130px;
+        background-color: #363a3a;
+        position: fixed;
+        bottom: 5px;
+        right: 25px;
+        gap: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        flex-direction: column;
+    }
+}
+@media  screen and (max-width: 500px) {
+    .left{
+        width: 100%;
+        background-color: black;
+    }
+    .songItem ul li {
+        font-family: "Poppins", sans-serif;
+        list-style-type: none;
+        width: 264px;
+        padding: 10px 10px;
+        font-size: 9px;
+        border: 2px solid #d0d0d0;
+        margin: 15px 1px;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        /* justify-items: center; */
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    
+}
+@media screen and (min-width: 768px ) and (max-width: 820px ){
+    
+.left {
+    width: 98%;
+    /* margin: 9px 4px;
+    position: relative;
+    max-height: 100vh; */
+    background-color: black;
+}
+.songItem ul li {
+    width: 50vw;
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+}

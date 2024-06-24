@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+
+
+
+
+}
+
+#parent {
+    display: flex;
+    position: relative;
+    height: 100vh;
+}
+
+.left {
+    width: 29vw;
+    margin: 9px 4px;
+    position: relative;
+    max-height: 100vh;
+
+
+}
+
+.right {
+    width: 72vw;
+    margin: 4px 4px;
+    height: 100vh;
+
+
+}
+
+.box_1 {
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    background-color: #121212;
+    height: 25vh;
+    margin: 4px;
+    
+}
+.closeIcon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.box_1 ul li {
+    display: flex;
+    align-items: center;
+    width: 25px;
+    padding-top: 20px;
+    gap: 15px;
+    color: white;
+}
+
+.box_2 {
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    position: relative;
+    background-color: #121212;
+    height: 95vh;
+    margin: 10px 0;
+}
+
+.lib {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    color: white;
+    
+}
+
+.lib img {
+    width: 25px;
+    color: white;
+
+}
+
+.lib2 {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    margin: 15px;
+    
+}
+
+.songItem ul li {
+    font-family: "Poppins", sans-serif;
+    list-style-type: none;
+    width: 350px;
+    padding: 10px 20px;
+    border: 2px solid #d0d0d0;
+    margin: 15px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    /* justify-items: center; */
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25vw;
+    margin: auto;
+    ;
+}
+
+.content img {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.songItem {
+    margin: 0 35px;
+    padding: 5px 0;
+    
+    overflow-y: scroll;
+    max-height: 68vh;
+    border-radius: 10px;
+}
+
+.songItem::-webkit-scrollbar {
+    display: none;
+}
+
+.foot {
+    
+    font-size: small;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    
+}
+
+.headRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34 34 34);
+    height: 10vh;
+    margin: 10px 0;
+}
+.ham{
+    display: none;
+}
+.arr {
+    display: flex;
+}
+
+.btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 2px 6px;
+    cursor: pointer;
+    
+    
+}
+
+.sign {
+    border-radius: 9px;
+    background-color: rgba(72, 71, 71, 0.7);
+    color: white;
+}
+
+.sign:hover {
+    padding: 4px 4px;
+}
+
+.log {
+    padding: 15px 20px;
+    border-radius: 20px;
+    
+}
+
+.log:hover {
+    font-size: 1.01rem;
+}
+
+.spotifyPlaylists {
+    /* border: 2px solid red; */
+    color: white;
+    margin: 6px 0;
+    background-color: #121212;
+    height: 110vh;
+    position: relative;
+    
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: xx-large
+}
+
+h4 {
+    font-size: x-large
+}
+
+.card {
+    display: flex;
+    margin: 15px 3px;
+    padding: 30px 15px 15px 15px;
+    flex-direction: column;
+    background-color: #252525;
+    /* align-items: center; */
+    gap: 3px;
+    cursor: pointer;
+    /* border: 2px solid red; */
+    height: 260px;
+    gap: 5px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transition: all ease-in 0.3s;
+    background-color: rgb(84, 95, 95);
+}
+
+.card img {
+    
+    height: 200px;
+    width: 220px;
+    object-fit: fill;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow: scroll; */
+    height: 100vh;
+    overflow-y: scroll;
+    gap: 6px;
+    margin: 0px 10px;
+}
+
+.seekBar {
+    font-family: "Poppins", sans-serif;
+    width: 68vw;
+    margin: auto;
+    height: 90px;
+    background-color: #363a3a;
+    position: fixed;
+    bottom: 5px;
+    right: 45px;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    
+}
+
+.seekBar img {
+    height: 30px;
+    gap: 10px;
+    width: 30px;
+}
+
+.pSvg img {
+    padding: 0 9px;
+}
+
+.seekBar img:hover {
+    cursor: pointer;
+}
+
+.design {
+    border: 2px solid red;
+}
+
+.seekPlay {
+    width: 98%;
+    border: 2px solid black;
+    position: relative;
+    bottom: 3px;
+}
+
+.run {
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    border-radius: 5px;
+    
+}
+.pSvg{
+    margin: 6px 0;
+}
+.infoBar{
+    display: flex;
+    justify-content:space-between ;
+    width: 65vw;
+}
+.run{
+    cursor: pointer;
+}
+.seekPlay{
+    cursor: pointer;
+    
+}
